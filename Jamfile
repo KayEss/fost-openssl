@@ -1,6 +1,8 @@
 
+lib libeay32 : : <file>install/lib/libeay32.lib ;
+lib ssleay32 : : <file>install/lib/ssleay32.lib ;
 
-lib libeay32 : : <file>install/bin/libeay32.dll ;
-lib ssleay32 : : <file>install/bin/ssleay32.dll ;
+lib libeay32-dll : libeay32 : <file>install/bin/libeay32.dll ;
+lib ssleay32-dll : ssleay32 : <file>install/bin/ssleay32.dll ;
 
 install ../dist/bin : libeay32 ssleay32 ;
