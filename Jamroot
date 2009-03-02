@@ -1,4 +1,7 @@
 
+# Works around a bug in boost.build
+project OpenSSL : requirements -<threading>multi ;
+
 lib libeay32 ssleay32 libeay32-dll ssleay32-dll ;
 
 lib ssleay32 : : <file>install/lib/ssleay32.lib <target-os>windows ;
