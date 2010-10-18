@@ -6,8 +6,12 @@ lib crypto ssl libeay32 ssleay32 libeay32-dll ssleay32-dll ;
 
 lib crypto : : <file>install/lib/libcrypto_arm.a <target-os>iphone <macosx-version>iphone-3.2 ;
 lib crypto : : <file>install/lib/libcrypto_i386.a <target-os>iphone <macosx-version>iphonesim-3.2 ;
+lib crypto : : <file>install/lib/libcrypto_arm.a <target-os>iphone <macosx-version>iphone-4.2 ;
+lib crypto : : <file>install/lib/libcrypto_i386.a <target-os>iphone <macosx-version>iphonesim-4.2 ;
 lib ssl : : <file>install/lib/libssl_arm.a <target-os>iphone <macosx-version>iphone-3.2 ;
 lib ssl : : <file>install/lib/libssl_i386.a <target-os>iphone <macosx-version>iphonesim-3.2 ;
+lib ssl : : <file>install/lib/libssl_arm.a <target-os>iphone <macosx-version>iphone-4.2 ;
+lib ssl : : <file>install/lib/libssl_i386.a <target-os>iphone <macosx-version>iphonesim-4.2 ;
 
 lib libeay32 : : <file>install/lib/libeay32.lib <target-os>windows ;
 lib ssleay32 : : <file>install/lib/ssleay32.lib <target-os>windows ;
