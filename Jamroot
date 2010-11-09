@@ -1,3 +1,6 @@
+path-constant TOP : . ;
+include $(TOP)/../boost-version.jam ;
+include ../fost-base/fost.jam ;
 
 # Works around a bug in boost.build
 project OpenSSL : requirements -<threading>multi ;
@@ -19,4 +22,4 @@ lib ssleay32 : : <file>install/lib/ssleay32.lib <target-os>windows ;
 lib ssleay32-dll : ssleay32 : <file>install/bin/ssleay32.dll <target-os>windows ;
 lib libeay32-dll : libeay32 ssleay32-dll : <file>install/bin/libeay32.dll <target-os>windows ;
 
-install ../dist/bin : libeay32-dll ssleay32-dll ;
+install $(PREFIX)/bin : libeay32-dll ssleay32-dll ;
